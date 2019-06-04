@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   resources :examples, except: %i[new edit]
 
   # Custom routes
-  # get '/instruments/:id' => 'instruments#index'
+  patch '/instruments/:id/edit' => 'instruments#patch'
+  post '/create-instrument' => 'instruments#create'
+  get '/instruments/:id' => 'instruments#show'
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
