@@ -12,7 +12,8 @@ curl "http://localhost:4741/instruments" \
       "rent": "'"${RBOO}"'",
       "sale": "'"${SBOO}"'",
       "price": "'"${PRICE}"'",
-      "rate": "'"${RATE}"'"
+      "rate": "'"${RATE}"'",
+      "contact": "'"${CONTACT}"'"
      }
   }'
 

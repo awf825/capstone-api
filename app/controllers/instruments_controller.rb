@@ -53,6 +53,7 @@ class InstrumentsController < OpenReadController
                                          :sale,
                                          :price,
                                          :rate,
+                                         :contact,
                                          :user_id)
     end
 end
