@@ -8,6 +8,12 @@ class InstrumentsController < OpenReadController
     render json: @instruments
   end
 
+  def index_owned
+    @instruments = current_user.instruments.all
+
+    render json: @instruments
+  end
+
   # GET /instruments/1
   def show
     @instrument = Instrument.find(params[:id])

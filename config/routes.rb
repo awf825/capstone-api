@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   patch '/instruments/:id/edit' => 'instruments#patch'
   post '/create-instrument' => 'instruments#create'
   get '/instruments/:id' => 'instruments#show'
+  get '/myinstruments' => 'instruments#index_owned'
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
